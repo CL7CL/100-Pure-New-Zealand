@@ -1,0 +1,59 @@
+%btn-w{
+  width: 150px;
+  height: 40px;  
+  border-radius: 8px;
+  border: 2px solid;
+  padding: 4px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  border-color: $white;
+  background-color: $black;
+  color: $white;
+  font-family: $fontFamilyShrikhand;
+  transition: background-color .5s ease-in-out;
+  
+  &:hover{ 
+    background-color: $white;
+    color: $black; 
+  }
+}
+
+%btn-g{
+  height: 40px;  
+  border-radius: 8px;
+  border: 2px solid;
+  padding: 4px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-color: $green;
+  background-color: $white;
+  color: $green;
+  font-family: $fontFamilyShrikhand;
+  transition: background-color .4s ease-in-out;
+  
+  &:hover{ 
+    background-color: $green;
+    color: $white; 
+  }
+}
+
+
+.booking-form{
+  .cta-btn{
+    @extend %btn-w;
+    margin-top: 48px;
+  }
+
+}
+
+.cta-booking{
+  @extend %btn-g;
+  display: inline-block;
+}
+
+.booking-btn{
+  @extend%btn-g;
+}
+
+
+

@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Rozha+One&family=Shrikhand&display=swap" rel="stylesheet">
+
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+  
+  <title>100% Pure New Zealand</title>
+</head>
+<body>
+
+  <header>
+    <img src="./images/logo.svg" alt="logo" class="logo">
+
+    <div class="search-box">
+      <i class="bx bx-search-alt" ></i>
+      <input type="text" placeholder="search here...">
+    </div>
+    
+    
+    <div class="icons">     
+      <i class="bx bx-search-alt" id="searchIcon" ></i>
+      <i class="bx bxs-user-circle"></i>
+    </div>  
+  </header>
+
+  <section class="hero">
+
+  <div id="hero-carousel" class="carousel-slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="./images/hero-1-PC.jpg" class="d-block w-100 c-img" alt="hotel-pc">
+        <div class="carousel-caption ">
+          <h1 class="hero-title">Queenstown</h1>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./images/hero-2.jpg" class="d-block w-100 c-img" alt="hotel-2">
+        <div class="carousel-caption ">
+          <h1 class="hero-title">Queenstown</h1>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./images/hero-3.jpg" class="d-block w-100 c-img" alt="hotel-3">
+        <div class="carousel-caption ">
+          <h1 class="hero-title">Queenstown</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="booking-form">
+  <div class="container">
+    <h2>Book Your Perfect Stay</h2>
+    <form action="search" class="search-form">
+
+      <div class="input-wrapper">
+          <label for="checkIn">Check-in:</label>
+          <input type="date" id="checkIn" name="checkIn" required>
+      </div>
+
+      <div class="input-wrapper">
+          <label for="checkOut">Check-out:</label>
+          <input type="date" id="checkOut" name="checkOut" required>
+      </div>    
+      
+      <div class="input-wrapper guest-quantity">
+          <label for="quantity" class="quantity">Guests:</label>         
+          <input type="number" id="quantity" name="quantity" value="1" min="1" max="20" >       
+      </div>   
+      
+      <div class="input-wrapper">
+        <label for="accommodationType" class="accommodationType">Accommodation Type:</label>
+        <select id="accommodationType" name="accommodationType">
+          <option value="Hotel">Hotels</option>
+          <option value="Hostel ">Hostels </option>
+          <option value="Motel">Motels</option>
+          <option value="House">Houses</option>
+        </select>
+      </div>  
+    
+        <button type="submit" class="cta-btn">Search</button>
+
+    </form>
+  </div>
+</section>
+
+<section class="accommodations">
+
+<div class="hotels">
+  <div class="card">
+  <img src="./images/Hotel-1.jpg.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like">  
+   
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">The Rees Hotel</h5>
+        <i class="bx bxs-star"> &nbsp;4.4</i>  
+      </div>
+
+      <p class="card-text">The Rees is a sophisticated 5star hotel offering luxury accommodation options all with panoramic lake views, a fine dining restaurant and more.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 157</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup1">See Availability</a>
+    </div>     
+    </div>
+  </div>
+
+  <div class="card" >
+    <img src="./images/Hotel-2.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like">  
+
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">Sudima Five Mile</h5>
+        <i class="bx bxs-star"> &nbsp;4.6</i>  
+      </div>
+
+      <p class="card-text">Sudima Queenstown, a new hotel near the airport in Frankton, is perfectly located for easy access to Queenstown and nearby ski fields.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 165</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup2">See Availability</a>
+    </div>     
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./images/Hotel-3.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like">  
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">Swiss-Belsuites</h5>
+        <i class="bx bxs-star"> &nbsp;4.3</i>  
+      </div>
+
+      <p class="card-text">Swiss-Belsuites, a 5-Star Qualmark, offers 80 serviced suite apartment-style rooms just a 10-minute walk from Queenstown's center.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 160</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup3">See Availability</a>
+    </div>     
+    </div>
+  </div>
+</div>
+
+<div class="hostels">
+  <div class="card">
+    <img src="./images/hostel-1.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like"> 
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">JUCY Snooze</h5>
+        <i class="bx bxs-star"> &nbsp;4.2</i>  
+      </div>
+
+      <p class="card-text">JUCY Snooze offers private en-suite rooms, budget-friendly JUCY Pods, speedy check-in kiosks, a kitchenette, and a travel desk.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 30</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup4">See Availability</a>
+    </div>     
+    </div>
+  </div>
+
+  <div class="card" >
+    <img src="./images/hostel-2.jpeg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like"> 
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">Haka Lodge </h5>
+        <i class="bx bxs-star"> &nbsp;4.2</i>  
+      </div>
+
+      <p class="card-text">Haka Lodge just a street away from the main intersection in Queenstown (Shotover/Camp Street) and a short walk from the lake and restaurants.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 34</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup5">See Availability</a>
+    </div>     
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./images/hostel-3.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like"> 
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">Absoloot Hostel</h5>
+        <i class="bx bxs-star"> &nbsp;4.1</i>  
+      </div>
+
+      <p class="card-text">Absoloot Hostel offers diverse options for backpackers and value-seeking Queenstown travelers. Your home away from home with a view to rival the best.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 35</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup6">See Availability</a>
+    </div>     
+    </div>
+  </div>
+</div>
+
+<div class="motels">
+  <div class="card">
+    <img src="./images/motel-1.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like"> 
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">Abba Court Motel</h5>
+        <i class="bx bxs-star"> &nbsp;4.3</i>  
+      </div>
+
+      <p class="card-text">Abba Court Motel: Family-friendly with on-site playground, a one-minute walk to a supermarket, and five minutes to Queenstown town center.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 90</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup7">See Availability</a>
+    </div>     
+    </div>
+  </div>
+
+  <div class="card" >
+    <img src="./images/motel-2.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like"> 
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">Blue Peaks Lodge </h5>
+        <i class="bx bxs-star"> &nbsp;4.1</i>  
+      </div>
+
+      <p class="card-text">Bright, modern motel just 5 minutes from Queenstown center. Studios, 1-2 bedroom units, kitchens, free WiFi, guest laundry, and parking</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 110</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup8">See Availability</a>
+    </div>     
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./images/motel-3.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like"> 
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">Autoline Motel</h5>
+        <i class="bx bxs-star"> &nbsp;4.3</i>  
+      </div>
+
+      <p class="card-text">Autoline Queenstown: Motel and apartment complex providing high-standard accommodation for a memorable stay.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 110</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup9">See Availability</a>
+    </div>     
+    </div>
+  </div>
+</div>
+
+
+<div class="houses">
+  <div class="card">
+    <img src="./images/house-1.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like"> 
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">Glenorchy Lake</h5>
+        <i class="bx bxs-star"> &nbsp;4.5</i>  
+      </div>
+
+      <p class="card-text"> Indulge in lakeside luxury at our Glenorchy retreat, offering stunning views and a private spa for an unparalleled escape.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 240</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup10">See Availability</a>
+    </div>     
+    </div>
+  </div>
+
+  <div class="card" >
+    <img src="./images/house-2.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like"> 
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">Whakatipu Bliss </h5>
+        <i class="bx bxs-star"> &nbsp;4.1</i>  
+      </div>
+
+      <p class="card-text">2 king beds, heating, fully equipped kitchen, lake and mountain views, parking, balcony, laundry, Vodafone TV with Netflix and WIFI.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 220</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup11">See Availability</a>
+    </div>     
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./images/house-3.jpg" class="card-img-top" alt="hotel-pc">
+
+    <img  class="like-icon" src="./images/Liked.png" alt="Like"> 
+    <div class="card-body">
+      <div class="card-info">
+        <h5 class="card-title">Pinnacle Rise</h5>
+        <i class="bx bxs-star"> &nbsp;4.3</i>  
+      </div>
+
+      <p class="card-text">Stunning lakeside holiday home with scenic views, split over two levels for maximum enjoyment. Just a 5-minute drive from the CBD.</p>
+
+      <div class="card-price">
+      <div class="price">
+        <p class="hotel-price">NZD $ 275</p>
+        <p class="day">Per Night</p>
+      </div>  
+      
+      <a href="#" class="cta-booking" data-popup-id="popup12">See Availability</a>
+    </div>     
+    </div>
+  </div>
+</div>
+
+
+<div class="popup-overlay" id="popup1">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-1.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-2.jpeg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-3.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">The Rees Hotel</h1>
+      <p class="hotel-info">The Rees provides luxurious accommodation, featuring five private 3-bedroom, 3-bathroom Lakeside Residences. Each residence includes a terrace, offering breathtaking views across Lake Wakatipu to the Remarkable Mountain range.</p>
+
+      <p class="location"><strong>Location:</strong>
+        377 Frankton Road, Central Queenstown, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">( min 1 night, max 5 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price" class="Price"> NZD$ 157</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+
+<div class="popup-overlay" id="popup2">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel2" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-4.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-5.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-6.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">Sudima Five Mile</h1>
+      <p class="hotel-info">Sudima Queenstown is a new hotel on the fringe of Queenstown in the bustling Frankton area. Conveniently just 2.5kms from the airport, on the main route north, south and to the surrounding ski fields makes it an ideal location to stay.</p>
+
+      <p class="location"><strong>Location:</strong>
+        20 Grant Road, Frankton, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">( min 2 night, max 5 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price2" class="Price"> NZD$ 165</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup3">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel3" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-7.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-8.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-9.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel3" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">Swiss-Belsuites</h1>
+      <p class="hotel-info">Swiss-Belsuites Pounamu Queenstown offers 5-star luxury accommodation with uninterrupted views of Lake Wakatipu. The spacious suites and rooms provide a comfortable, warm, and private home away from home experience.</p>
+
+      <p class="location"><strong>Location:</strong>
+        110 Frankton Road, Central Queenstown, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">( min 1 night, max 3 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price3" class="Price"> NZD$ 160</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup4">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel4" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-10.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-11.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-12.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel4" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel4" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">JUCY Snooze</h1>
+      <p class="hotel-info">In downtown Queenstown, JUCY Snooze is a short 5-minute walk to the lakefront. Opened in April 2018, it features a unique rooftop pizzeria and bar, Miss Lucy's, offering epic views of Lake Wakatipu along with woodfired pizza and local beverages.</p>
+
+      <p class="location"><strong>Location:</strong>
+        47 Camp Street, Central Queenstown, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">(min 1 night, max 10 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price4" class="Price"> NZD$ 30</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup5">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel5" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-13.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-14.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-15.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel5" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel5" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">Haka Lodge</h1>
+      <p class="hotel-info">Our super comfy beds boast hotel-quality mattresses and stylish designs. The top-of-the-line wooden bunk beds ensure a peaceful sleep, each equipped with a power outlet, reading light, lockable storage, and a privacy curtain for your personal space.</p>
+
+      <p class="location"><strong>Location:</strong>
+        6 Henry Street, Central Queenstown, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">(min 1 night, max 5 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price5" class="Price"> NZD$ 34</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup6">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel6" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-16.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-17.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-18.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel6" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel6" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">Absoloot Hostel</h1>
+      <p class="hotel-info">Our dorms host up to 6 people, and our private setups rival hotel comfort. We're more than just a bed – our friendly staff can assist with adventure bookings, and free Wi-Fi is available for your convenience.</p>
+
+      <p class="location"><strong>Location:</strong>
+        Absoloot Hostel QT, Central Queenstown, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">(min 1 night, max 7 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price6" class="Price"> NZD$ 35</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup7">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel7" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-19.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-20.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-21.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel7" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel7" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">Abba Court Motel</h1>
+      <p class="hotel-info">Abba Court Motel offers Wi-Fi in all rooms with kitchen facilities. Conveniently located on the road to Coronet Peak, it's ideal for winter travelers with nearby ski shuttles. Book activities at our office for a perfect stay during the Queenstown Winter Festival.</p>
+
+      <p class="location"><strong>Location:</strong>
+        35 Gorge Road, Central Queenstown, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">(min 3 night, max 10 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price7" class="Price"> NZD$ 90</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup8">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel8" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-22.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-23.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-24.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel8" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel8" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">Blue Peaks Lodge</h1>
+      <p class="hotel-info">Our clean and welcoming guest rooms include tea / coffee making facilities, ensuite bathroom with shower and daily room service. Many rooms have full kitchen facilities and all have a fridge and microwave.</p>
+
+      <p class="location"><strong>Location:</strong>
+        11 Sydney Street, Central Queenstown, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">(min 2 night, max 8 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price8" class="Price"> NZD$ 110</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup9">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel9" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-25.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-26.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-27.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel9" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel9" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">Autoline Motel</h1>
+      <p class="hotel-info">Autoline Queenstown offers our guests a high standard of accommodation in our motel and studio style units. We are centrally located at 2-4 Dublin street which is just a few minutes walk from Queenstown’s town centre.</p>
+
+      <p class="location"><strong>Location:</strong>
+        4 Dublin Street, Central Queenstown, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">(min 3 night, max 8 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price9" class="Price"> NZD$ 110</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup10">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel10" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-28.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-29.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-30.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel10" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel10" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">Glenorchy Lake House</h1>
+      <p class="hotel-info"> The house features a fully equipped kitchen, dining area, lounge, and outdoor furniture. Two bedrooms are downstairs, one upstairs. Breakfast is included for direct bookings. Guests have the Lake House to themselves.</p>
+
+      <p class="location"><strong>Location:</strong>
+        13 Mull Street, Glenorchy, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">(min 2 night, max 15 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price10" class="Price"> NZD$ 240</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup11">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel11" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-31.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-32.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-33.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel11" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel11" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">Whakatipu Bliss</h1>
+      <p class="hotel-info"> This modern two-bedroom home opens into a spacious apartment with stunning views from large windows. The ample deck provides space for entertaining, where you can admire local peaks and the azure lake while enjoying a quiet drink in the alpine surroundings. </p>
+
+      <p class="location"><strong>Location:</strong>
+        8 Goldrush Way, Central Queenstown, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">(min 1 night, max 10 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price11" class="Price"> NZD$ 220</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popup12">
+  <div class="popup-content">
+    <p class="close-btn" onclick="closePopup()">&times;</p>
+
+    <div id="accommodations-carousel12" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./images/h-34.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-35.jpg" class="d-block c-imag" alt="hotels-imgs">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./images/h-36.jpg" class="d-block  c-imag" alt="hotels-imgs">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#accommodations-carousel12" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#accommodations-carousel12" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="price-info">
+      <h1 class="hotel-name">Pinnacle Rise</h1>
+      <p class="hotel-info"> The home offers three bedrooms (master connected to the balcony) with bathrooms on both levels. Large windows provide natural light, enhancing the sense of space. Open-plan living areas and a well-appointed kitchen cater to any occasion. </p>
+
+      <p class="location"><strong>Location:</strong>
+        1085, Unit 5 Frankton Road, Frankton, New Zealand.</p>
+      
+      <h4 class="duration">Stay Duration:</h4>
+      <p class="min-day">(min 1 night, max 3 nights)</p>
+      
+      <div class="input-numbers">
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="number">1</span>
+        <span class="plus">+</span>
+      </div>
+     </div>
+    
+        <hr class="styled-hr">
+        
+       <p class="total">Total Price:&nbsp; 
+       <span id="total-price12" class="Price"> NZD$ 275</span></p>
+    </div>
+    <button class="booking-btn">Book Now</button>
+  </div>
+</div>
+
+
+
+
+
+</section> 
+
+
+  <script src="main.js"></script>
+</body>
+</html>
